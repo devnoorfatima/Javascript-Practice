@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+<head> 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
@@ -8,9 +8,10 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
         crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
-    <link rel="stylesheet" href="calc.css">
+    <link rel="stylesheet" href="fuel.css">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Calculator</title>
+    <title>Calculators</title>
+
 </head>
 <body>
     <!-- navbar starts here -->
@@ -40,52 +41,38 @@
                 </li>
 
     </nav>
-            <!-- navbar ends here -->
+    <!-- navbar ends here -->
 
-            <!-- Calculator display starts -->
-            
-            
-            <div class="calculator">
-                    <input type="text" class="calculator-screen" value="0" disabled />
-                    
-                    <div class="calculator-keys">
-                      
-                      <button type="button" class="operator" value="+">+</button>
-                      <button type="button" class="operator" value="-">-</button>
-                      <button type="button" class="operator" value="*">&times;</button>
-                      <button type="button" class="operator" value="/">&divide;</button>
-                  
-                      <button type="button" value="7">7</button>
-                      <button type="button" value="8">8</button>
-                      <button type="button" value="9">9</button>
-                  
-                  
-                      <button type="button" value="4">4</button>
-                      <button type="button" value="5">5</button>
-                      <button type="button" value="6">6</button>
-                  
-                  
-                      <button type="button" value="1">1</button>
-                      <button type="button" value="2">2</button>
-                      <button type="button" value="3">3</button>
-                  
-                  
-                      <button type="button" value="0">0</button>
-                      <button type="button" class="decimal function" value=".">.</button>
-                      <button type="button" class="all-clear function" value="all-clear">AC</button>
-                  
-                      <button type="button" class="equal-sign operator" value="=">=</button>
-                  
-                    </div>
 
-    
+    <form >
+        <div class="fuel-calc div-overlay">
+             <h1>Fuel Cost Claculator</h1>
+             <label for="distance">Trip Distance :</label>
+             <input type="text" class="size" id="distance" required> miles<br />
+             <label for="efficiency">Fuel Efficiency :</label>
+             <input type="text" class="size" id="efficiency" required>miles/gallon <br />
+             <label for="fuel">Fuel Price : </label>
+             <input type="number" class="size" id="fuel" min="1"> $<br />
+             <div id="btn">
+                 <button type="button" onclick="calculatePrice();">Calculate</button>
+             </div>
+ 
+             <label for="fuel-needed"> Fuel Needed :</label>
+             <input type="text" class="size" id="fuel-needed"> Gallons<br />
+             <label for="cost">Price ($) :</label>
+             <input type="text" class="size" id="cost"> $<br />
+        </div>
+    </form>
+
+
+
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
         crossorigin="anonymous"></script>
-    <script src="calc.js"></script>
-    
-    </body>
+    <script src="fuel.js"></script>
+
+</body>
 </html>

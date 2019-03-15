@@ -96,24 +96,4 @@
      outline: none;
  }
 
- /* Styles for fuel cost calculator */
-
- .fuel-calc {
-    display: inline-block;
-    text-align: left;
-    background-color: rgb(118, 122, 121);
-    padding: 5rem;
-    margin: 5rem auto 5rem auto;
-    border-radius: 10px;
-    border: 5px double rgb(66, 65, 65);
-}
-
-#cost {
-    margin-left: 2.5rem;
-}
-#distance{
-    margin-left: 0.5rem;
-}
-#fuel{
-    margin-left: 3rem;
-}
+ 
