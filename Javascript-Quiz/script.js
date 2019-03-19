@@ -55,11 +55,38 @@
         correctAnswer: "c"
       },
       {
-        question: "The total weight of bacteria in human body is ....",
+        question: "The total time taken by heart to pump blood and get it back is .....",
         answers: {
-          a: "2g",
-          b: "2kg",
-          c: "200g"
+          a: "2s",
+          b: "0.8s",
+          c: "2.8s"
+        },
+        correctAnswer: "b"
+      },
+      {
+        question: "One quater of our bones are in our .....",
+        answers: {
+          a: "hands",
+          b: "skull",
+          c: "feet"
+        },
+        correctAnswer: "c"
+      },
+      {
+        question: "The human body contains enough fat to make ..... bars of soap",
+        answers: {
+          a: "Seven",
+          b: "Two",
+          c: "Hundred"
+        },
+        correctAnswer: "a"
+      },
+      {
+        question: "80% of brain is ......",
+        answers: {
+          a: "fats",
+          b: "water",
+          c: "proteins"
         },
         correctAnswer: "b"
       },
@@ -126,11 +153,20 @@
           answerContainers[questionNumber].style.color = "red";
         }
       });
-  
+      
       // show number of correct answers out of total
-      resultsContainer.innerHTML = `${numCorrect} out of ${myQuestions.length}`;
+      resultsContainer.innerHTML = `
+      Result</br>
+      ${numCorrect} out of ${myQuestions.length}
+      `;
+    if(numCorrect >=5){
+      resultsContainer.style.color='lightgreen';
+    }else {
+      resultsContainer.style.color='red';
     }
-  
+    
+    }
+     
     function showSlide(n) {
       slides[currentSlide].classList.remove("active-slide");
       slides[n].classList.add("active-slide");
@@ -177,5 +213,4 @@
     submitButton.addEventListener("click", showResults);
     previousButton.addEventListener("click", showPreviousSlide);
     nextButton.addEventListener("click", showNextSlide);
-  })();
-  
+  })();  
