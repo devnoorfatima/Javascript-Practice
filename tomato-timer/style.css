@@ -5,6 +5,7 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     font-family: Margarine;
+    height: -webkit-fill-available;
 }
 
 h1 {
@@ -63,3 +64,11 @@ input[type="text"] {
     text-align: center;
     font-size: 30px;
 }
+
+
+@media (min-width: 175px) and (max-width: 343px) {
+      body{
+          height: auto;
+      }
+  }
+  
