@@ -1,15 +1,15 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins');
 body{
     font-family: Poppins;
-    background-color: rgb(188, 243, 240);
+    background-color: rgb(235, 221, 221);
     color: black;
 }
 .btn{
-    color: rgb(153, 238, 210);
+    color: rgb(235, 221, 221);
     background-color: black;
 }
 .btn:hover{
-    color: rgb(180, 255, 230);
+    color: rgb(235, 221, 221);
 }
 img{
     width: inherit;
@@ -24,7 +24,7 @@ img{
     /* border-radius: 5px; */
 }
 .input{
-    background-color: rgb(188, 243, 240);
+    background-color:rgb(235, 221, 221) ;
     border: none;
     font-size: 18px;
     border-bottom: 2px solid rgb(70, 66, 66);
