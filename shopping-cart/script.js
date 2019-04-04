@@ -23,24 +23,34 @@ const br = document.querySelector('.br');
 const brp = document.querySelector('.brp');
 const rg = document.querySelector('.rg');
 const rgp = document.querySelector('.rgp');
+
+const products = {
+    1: {
+        "name": 'cooking oil',
+        "price": '175.0'
+      },
+      2:{
+        "name": 'Jooti',
+        "price": '15.0'
+      }
+}
 let item = [];
 
+
+
 function addToCart(x, y) {
-    const span = document.createElement("SPAN");
-    const txt = document.createTextNode(y);
-    span.className = "price";
-    span.appendChild(txt);
-    console.log(span.innerHTML);
-    let result =x+(span.innerHTML);
+    const span = `<span class="price">${products[x].price}</span>`
+    const result = products[x].name + " " + span;
     console.log(result);
-    if (item.includes(x) === false) item.push(result);
+    if (item.includes(products[x]) === false) item.push(result);
 }
 
 function cart() {
+    list.innerHTML = "";
     for (let i = 0; i < item.length; i++) {
         let text = item[i];
         let listItem = document.createElement("LI");
-        listItem.textContent = text;
+        listItem.innerHTML = text;
         list.appendChild(listItem);
     }
 }
