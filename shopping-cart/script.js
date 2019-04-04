@@ -31,7 +31,7 @@ function addToCart(x, y) {
     span.className = "price";
     span.appendChild(txt);
     console.log(span.innerHTML);
-    let result = span;
+    let result =x+(span.innerHTML);
     console.log(result);
     if (item.includes(x) === false) item.push(result);
 }
