@@ -33,14 +33,16 @@ body {
     font-size: 2rem;
     border-radius: 250px;
 }
-
 #btn:hover {
     outline: none;
 }
-
 #btn:focus {
     outline: none;
 
+}
+#text {
+    display:none;
+    color:red;
 }
 
 @media only screen and (max-width: 800px) {
