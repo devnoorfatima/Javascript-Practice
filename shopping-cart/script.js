@@ -1,45 +1,58 @@
 const list = document.querySelector('.list');
-const c = document.querySelector('.co');
-const cp = document.querySelector('.cop');
-const p = document.querySelector('.pas');
-const pp = document.querySelector('.pasp');
-const i = document.querySelector('.icm');
-const ip = document.querySelector('.icmp');
-const a1 = document.querySelector('.a1');
-const a1p = document.querySelector('.a1p');
-const zm = document.querySelector('.zm');
-const zmp = document.querySelector('.zmp');
-const lt = document.querySelector('.lt');
-const ltp = document.querySelector('.ltp');
-const ld = document.querySelector('.ld');
-const ldp = document.querySelector('.ldp');
-const lc = document.querySelector('.lc');
-const lcp = document.querySelector('.lcp');
-const tf = document.querySelector('.tf');
-const tfp = document.querySelector('.tfp');
-const ms = document.querySelector('.ms');
-const msp = document.querySelector('.msp');
-const br = document.querySelector('.br');
-const brp = document.querySelector('.brp');
-const rg = document.querySelector('.rg');
-const rgp = document.querySelector('.rgp');
-
 const products = {
-    1: {
+      1:{
         "name": 'cooking oil',
-        "price": '175.0'
+        "price": '10.5'
       },
       2:{
-        "name": 'Jooti',
-        "price": '15.0'
+        "name": 'Pasta',
+        "price": '6.25'
+      },
+      3:{
+        "name": 'Instant cupcake mixture',
+        "price": '5'
+      },
+      4:{
+        "name": 'All-in-one',
+        "price": '260'
+      },
+      5:{
+        "name": 'Zero Make-up Kit',
+        "price": '20.5'
+      },
+      6:{
+        "name": 'Lip Tints',
+        "price": '12.75'
+      },
+      7:{
+        "name": 'Lawn Dress',
+        "price": '15'
+      },
+      8:{
+        "name": 'Lawn-Chiffon Combo',
+        "price": '15'
+      },
+      9:{
+        "name": 'Toddler Frock',
+        "price": '10.5'
+      },
+      10:{
+        "name": 'Metallic shine heels',
+        "price": '25'
+      },
+      11:{
+        "name": 'Blood Red combo',
+        "price": '20.5'
+      },
+      12:{
+        "name": 'Rose Gold sandals',
+        "price": '13.45'
       }
 }
 let item = [];
 
-
-
-function addToCart(x, y) {
-    const span = `<span class="price">${products[x].price}</span>`
+function addToCart(x) {
+    const span = `<span class="price">$${products[x].price}</span>`
     const result = products[x].name + " " + span;
     console.log(result);
     if (item.includes(products[x]) === false) item.push(result);
@@ -52,5 +65,6 @@ function cart() {
         let listItem = document.createElement("LI");
         listItem.innerHTML = text;
         list.appendChild(listItem);
+        listItem.style.textAlign='left';
     }
 }
