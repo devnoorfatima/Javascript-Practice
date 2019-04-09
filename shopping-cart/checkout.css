@@ -45,6 +45,16 @@ body {
     color:red;
 }
 
+.text{
+    display:none;
+    color:red;   
+}
+
+.err{
+    display:none;
+    color:red;   
+}
+
 @media only screen and (max-width: 800px) {
     .input {
         width: -webkit-fill-available;

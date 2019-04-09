@@ -14,26 +14,24 @@ input.addEventListener("keyup", function (event) {
         text.style.display = "none"
     }
 });
+const phone = document.querySelector('.validation');
+const name = document.querySelector('.name');
+const err = document.querySelector('.err');  
 
-function phonenumber(inputtxt) {
-    let phoneno = /^\d{11}$/;
-    if ((inputtxt.value.match(phoneno))) {
+function validate() {
+        let regex = /^\+(?:[0-9] ?){6,14}[0-9]$/;
+        if (regex.test(phone.value)) {
+            console.log(phone.value);
             return true;
         } else {
-            alert("message");
-            return false;
+        const txt = document.querySelector('.text'); 
+        txt.style.display='block';      
+        }
+        let rgx =/[a-zA-Z]+/g;
+        if (rgx.test(name.value)) {
+            console.log(name.value);
+            return true;
+        } else {
+          err.style.display='block';     
         }
     }
-
-    // function display() {
-    //     const form=document.querySelector('.form');
-    //     const icons=document.querySelector('.icons');
-    //     const header=document.querySelector('.head');
-    //     const final=document.querySelector('.final');
-    //     if(input.value){
-    //     form.style.display= 'none';
-    //    icons.style.display= 'none';
-    //    header.style.display= 'none';
-    //    final.style.display= 'none';
-    // }
-    // }
