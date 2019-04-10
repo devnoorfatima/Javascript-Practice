@@ -1,7 +1,33 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins');
+@import url('https://fonts.googleapis.com/css?family=Concert+One');
 body{
-    font-family: Poppins;
+    font-family: Concert One;
     color: white;
     background: url(./bg.jpeg) fixed no-repeat;
     background-size: cover;
 }
+#temperature{
+    font-size: 60px;
+}
+.cel{
+    font-size: 40px;
+    color: rgb(255, 255, 255);
+}
+.cel:hover{
+    color: white;
+}
+.far{
+    font-size: 40px;
+    opacity:0.5; 
+    color: #fff;
+}
+.far:hover{
+    color: white;
+}
+.far:focus{
+outline: none;    
+}
+
+.cel:focus{
+    outline: none;    
+    }
+    
