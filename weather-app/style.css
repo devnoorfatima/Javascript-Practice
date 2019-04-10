@@ -2,7 +2,7 @@
 body{
     font-family: Concert One;
     color: white;
-    background-color: aliceblue;
+    background-color: rgb(98, 102, 105);
 }
 #temperature{
     font-size: 60px;

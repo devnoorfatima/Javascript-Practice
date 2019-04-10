@@ -41,6 +41,9 @@ $.getJSON('https://geoip-db.com/json/')
         $('.cel').css("color","Black");
         $('.far').css("color","Black");
     }
+    // else if(data.weather[0].main.value.indexOf("Clear")!== -1){
+    //     console.log(shew);
+    // }
 })
 });
 function getFarenheit(){
