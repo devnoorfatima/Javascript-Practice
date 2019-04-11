@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Concert+One');
 body{
     font-family: Concert One;
-    color: white;
+    color: black;
     background-color: rgb(98, 102, 105);
 }
 #temperature{
@@ -9,16 +9,16 @@ body{
 }
 .cel{
     font-size: 40px;
-    color: rgb(255, 255, 255);
+    color: rgb(3, 3, 3);
 }
 .cel:hover{
-    color: white;
+    color: rgb(7, 7, 7);
 }
 .far{
     font-size: 40px;
+    color: black !important;
     opacity:0.5; 
-    color: #fff;
 }
 .far:hover{
-    color: white;
+    color: rgb(0, 0, 0);
 }

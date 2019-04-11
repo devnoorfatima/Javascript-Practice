@@ -16,34 +16,20 @@ $.getJSON('https://geoip-db.com/json/')
     if(data.main.temp<=1){
      $('body').css("background","url(./snow.jpeg) fixed no-repeat");
      $('body').css("background-size","cover");
-     $('body').css("color","Black");
-     $('.cel').css("color","Black");
-     $('.far').css("color","Black");
     }
     else if(data.main.temp<=20){
     $('body').css("background","url(./cold.jpeg) fixed no-repeat");
      $('body').css("background-size","cover");
-     $('body').css("color","Black");
-     $('.cel').css("color","Black");
-     $('.far').css("color","Black");
+
     }
     else if(data.main.temp<=35){
         $('body').css("background","url(./mild.jpeg) fixed no-repeat");
         $('body').css("background-size","cover");
-        $('body').css("color","Black");
-        $('.cel').css("color","Black");
-        $('.far').css("color","Black");
     }
     else if(data.main.temp>35){
         $('body').css("background","url(./sunny.jpeg) fixed no-repeat");
         $('body').css("background-size","cover");
-        $('body').css("color","Black");
-        $('.cel').css("color","Black");
-        $('.far').css("color","Black");
     }
-    // else if(data.weather[0].main.value.indexOf("Clear")!== -1){
-    //     console.log(shew);
-    // }
 })
 });
 function getFarenheit(){
