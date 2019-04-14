@@ -9,9 +9,13 @@ function getQuote() {
       format: "jsonp"
     },
     success: function(quote) {
-      $('#quote-title').html('&ldquo;'+quote.quoteText+'&rdquo;')
+      $('#quote-title').html('"' + quote.quoteText + '"')
       $('#quote-content').html("-"+quote.quoteAuthor);
     }
   });
 }
 getQuote();
+
+$('#btn').click(function(){
+getQuote()
+});
