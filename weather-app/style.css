@@ -18,7 +18,7 @@ body{
     font-size: 40px;
     color: black !important;
     opacity:0.5; 
-}
+} 
 .far:hover{
     color: rgb(0, 0, 0);
 }
