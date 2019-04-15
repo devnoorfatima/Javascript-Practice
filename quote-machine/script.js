@@ -11,6 +11,9 @@ function getQuote() {
     success: function(quote) {
       $('#quote-title').html('"' + quote.quoteText + '"')
       $('#quote-content').html("-"+quote.quoteAuthor);
+      if(quote.quoteAuthor==''){
+        $('#quote-content').html("-"+'Anonymous');
+      }
     }
   });
 }
