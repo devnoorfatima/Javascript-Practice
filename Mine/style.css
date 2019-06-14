@@ -18,7 +18,28 @@ body{
 }
 /* styles of intro part */
 #intro{
-    background: url(./imageedit_1_2544146057.jpg) fixed no-repeat;
+    background: url(./12.jpeg) no-repeat;
     background-size: cover;
     height: 100vh;
 }
+h1{
+    padding-top: 20rem;
+    font-size: 3rem;
+}
+
+/* about section */
+#about{
+    background: url(./2.jpeg);
+    
+}
+img{
+    height: 70%;
+    border-radius: 50%;
+}
+
+/* media query */
+@media screen and (max-width: 490px) {
+    body {
+      width: fit-content;
+    }
+  }
