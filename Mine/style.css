@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+/* styles for body */
+
+body{
+    font-family: Poppins;
+}
+
+/* styles of navbar */
+.navbar{
+    background-color: black !important ;
+}
+.navbar-toggler{
+    background-color: white;
+}
+.navbar a{
+    font-size: 1.5rem;
+    color: white;
+}
+/* styles of intro part */
+#intro{
+    background: url(./imageedit_1_2544146057.jpg) fixed no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
