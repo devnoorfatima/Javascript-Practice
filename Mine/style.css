@@ -18,7 +18,7 @@ body{
 }
 /* styles of intro part */
 #intro{
-    background: url(./12.jpeg) no-repeat;
+    background: url(./into-bg.jpeg) no-repeat;
     background-size: cover;
     height: 100vh;
 }
@@ -29,14 +29,16 @@ h1{
 
 /* about section */
 #about{
-    background: url(./2.jpeg);
-    
+    background: url(./1.png) no-repeat;
+    color: rgb(116, 110, 110);
 }
-img{
-    height: 70%;
-    border-radius: 50%;
+#font{
+    font-size: 3rem;
 }
-
+hr{
+    width: 50%;
+    background-color: rgb(182, 173, 173);
+}
 /* media query */
 @media screen and (max-width: 490px) {
     body {
