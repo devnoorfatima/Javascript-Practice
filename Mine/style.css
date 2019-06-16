@@ -42,7 +42,9 @@ hr{
 
 /* skills section */
 #skills{
-    background: url(./skill.png) no-repeat;
+    background: url(./bg2.jpg) no-repeat;
+    background-size: cover;
+    height: 1000px;
 }
 
 /* media query */
