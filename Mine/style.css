@@ -42,9 +42,18 @@ hr{
 
 /* skills section */
 #skills{
-    background: url(./bg2.jpg) no-repeat;
+    background: url(./2.jpeg) no-repeat;
     background-size: cover;
-    height: 1000px;
+}
+.pink{
+    color: rgb(187, 84, 101);
+}
+.purple{
+    color: rgb(87, 9, 87);
+}
+.symbol{
+    height: 70%;
+    width: 20%;
 }
 
 /* media query */
