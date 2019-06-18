@@ -64,5 +64,11 @@ hr{
     .row{
         padding: 0 !important;
     }
+    .fa-5x{
+        padding-top: 1rem;
+    }
+    .symbol{
+        padding-top: 1rem;
+    }
 
   }
