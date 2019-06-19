@@ -55,6 +55,12 @@ hr{
     height: 70%;
     width: 20%;
 }
+/* portfolio section */
+.shot{
+    height: 250px;
+    width: 350px;
+}
+
 
 /* media query */
 @media screen and (max-width: 575px) {
