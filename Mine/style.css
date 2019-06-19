@@ -59,8 +59,14 @@ hr{
 .shot{
     height: 250px;
     width: 350px;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 10px;
 }
+/* .portfolio-item{
 
+    border: 1px solid black;
+    border-radius: 5px;
+} */
 
 /* media query */
 @media screen and (max-width: 575px) {
