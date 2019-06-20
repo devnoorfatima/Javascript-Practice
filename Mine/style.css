@@ -1,93 +1,113 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
 /* styles for body */
 
-body{
+body {
     font-family: Poppins;
 }
 
 /* styles of navbar */
-.navbar{
-    background-color: black !important ;
+.navbar {
+    background-color: black !important;
 }
-.navbar-toggler{
+
+.navbar-toggler {
     background-color: white;
 }
-.navbar a{
+
+.navbar a {
     font-size: 1.5rem;
     color: white;
 }
+
 /* styles of intro part */
-#intro{
+#intro {
     background: url(./into-bg.jpeg) no-repeat;
     background-size: cover;
     height: 100vh;
 }
-h1{
+
+h1 {
     padding-top: 20rem;
     font-size: 3rem;
 }
 
 /* about section */
-#about{
+#about {
     background: url(./1.png) no-repeat;
     color: rgb(116, 110, 110);
 }
-#font{
+
+#font {
     font-size: 3rem;
 }
-hr{
+
+hr {
     width: 50%;
     background-color: rgb(182, 173, 173);
 }
 
 /* skills section */
-#skills{
+#skills {
     background: url(./2.jpeg) no-repeat;
     background-size: cover;
 }
-.pink{
+
+.pink {
     color: rgb(187, 84, 101);
 }
-.purple{
+
+.purple {
     color: rgb(87, 9, 87);
 }
-.symbol{
+
+.symbol {
     height: 70%;
     width: 20%;
 }
+
 /* portfolio section */
-#projects{
-    background-image: linear-gradient(to bottom,  rgb(212, 212, 206),rgb(83, 228, 238) );
+#projects {
+    background-color: rgb(221, 214, 214);
+    /* background-image: linear-gradient(to bottom,  rgb(212, 212, 206),rgb(83, 228, 238) ); */
 }
-.shot{
+
+.shot {
     height: 250px;
     width: 280px;
+    border-bottom: 1px solid rgb(194, 187, 187);
 }
-.btn{
+
+.btn {
     color: black;
     border: 1px solid black;
 }
-.btn:hover{
+
+.btn:hover {
     color: rgb(18, 189, 146);
 }
-.portfolio-item{
-    border: 1px solid black;
-    background-color: aliceblue;
+
+.portfolio-item {
+    border: 2px solid rgb(240, 167, 167);
+    border-radius: 5px;
+    background-color: white;
 }
 
 /* media query */
 @media screen and (max-width: 575px) {
     body {
-      width: fit-content;
+        width: fit-content;
     }
-    .row{
+
+    .row {
         padding: 0 !important;
     }
-    .fa-5x{
-        padding-top: 1rem;
-    }
-    .symbol{
+
+    .fa-5x {
         padding-top: 1rem;
     }
 
-  }
+    .symbol {
+        padding-top: 1rem;
+    }
+
+}
