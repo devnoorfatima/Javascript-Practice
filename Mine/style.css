@@ -56,17 +56,24 @@ hr{
     width: 20%;
 }
 /* portfolio section */
+#projects{
+    background-image: linear-gradient(to bottom,  rgb(212, 212, 206),rgb(83, 228, 238) );
+}
 .shot{
     height: 250px;
-    width: 350px;
-    border: 1px solid rgb(0, 0, 0);
-    border-radius: 10px;
+    width: 280px;
 }
-/* .portfolio-item{
-
+.btn{
+    color: black;
     border: 1px solid black;
-    border-radius: 5px;
-} */
+}
+.btn:hover{
+    color: rgb(18, 189, 146);
+}
+.portfolio-item{
+    border: 1px solid black;
+    background-color: aliceblue;
+}
 
 /* media query */
 @media screen and (max-width: 575px) {
