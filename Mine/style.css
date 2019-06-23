@@ -66,10 +66,6 @@ hr {
 }
 
 /* portfolio section */
-#projects {
-    background-color: rgb(221, 214, 214);
-    /* background-image: linear-gradient(to bottom,  rgb(212, 212, 206),rgb(83, 228, 238) ); */
-}
 
 .shot {
     height: 250px;
@@ -78,16 +74,16 @@ hr {
 }
 
 .btn {
-    color: black;
-    border: 1px solid black;
+    color:rgb(66, 226, 186);
+    border: 1px solid rgb(66, 226, 186);
 }
 
 .btn:hover {
-    color: rgb(18, 189, 146);
+    color: rgb(253, 250, 43);
 }
 
 .portfolio-item {
-    border: 2px solid rgb(240, 167, 167);
+    border: 2px solid rgb(66, 226, 186);
     border-radius: 5px;
     background-color: white;
 }
