@@ -94,7 +94,9 @@ hr {
 #contact{
     background-color: rgb(66, 64, 64);
 }
-
+.text-right{
+    text-decoration: underline;
+}
 
 /* media query */
 @media screen and (max-width: 575px) {
