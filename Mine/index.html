@@ -139,20 +139,23 @@
     <div id="contact" class="text-white">
         <h2 class="text-center text-white pt-4 pb-2">Contact</h2>
         <hr class="bg-white">
-        <form class="text-center" action="">
+        <form class="text-center" action="https://docs.google.com/forms/d/e/1FAIpQLSdlHE4UzJA6V_zZzVEtGl5qpQaxAeFX5girBJlqJLhPQkrGZA/formResponse" method="POST">
             <div class="row mr-0">
                 <div class="text-center col-sm-6">
-                        <label class="col-sm-3" for="name">Name:</label>
-                        <input class="col-sm-4" type="text">
-                        <label class="col-sm-3" for="email">Email:</label>
-                        <input class="col-sm-4" type="email">
-                        <label class="col-sm-3" for="number">Phone Number:</label>
-                        <input class="col-sm-4" type="tel">            
+                    <label class="col-sm-3 text-right" for="name">Name: </label>
+                    <input class="col-sm-6"  type="text" >
+                    <label class="col-sm-3 text-right" for="email">Email: </label>
+                    <input class="col-sm-6" type="email" >
+                    <label class="col-sm-3 text-right" for="number">Phone Number: </label>
+                    <input class="col-sm-6" type="tel" >
                 </div>
-                <div class="col-sm-5">
-                        <label class="col-sm-3" for="msg">Message:</label>
-                        <textarea class="col-sm-5" name="msg" cols="10" rows="2"></textarea>            
+                <div class="col-sm-6">
+                    <label class="col-sm-3" for="msg">Message: </label>
+                    <textarea class="col-sm-5" name="msg" cols="10" rows="5"></textarea>
                 </div>
+            </div>
+            <div>
+                <button class="text-center" type="submit">Submit</button>
             </div>
         </form>
 
