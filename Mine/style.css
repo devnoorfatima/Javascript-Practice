@@ -76,17 +76,25 @@ hr {
 .btn {
     color:rgb(66, 226, 186);
     border: 1px solid rgb(66, 226, 186);
+    box-shadow: 5px 5px rgb(223, 218, 218);
 }
 
 .btn:hover {
-    color: rgb(253, 250, 43);
+    color: rgb(77, 76, 75);
 }
 
 .portfolio-item {
     border: 2px solid rgb(66, 226, 186);
+    box-shadow: 5px 5px rgb(223, 218, 218);
     border-radius: 5px;
     background-color: white;
 }
+
+/* contact section */
+#contact{
+    background-color: rgb(66, 64, 64);
+}
+
 
 /* media query */
 @media screen and (max-width: 575px) {
