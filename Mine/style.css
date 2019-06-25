@@ -89,7 +89,9 @@ hr {
     border-radius: 5px;
     background-color: white;
 }
-
+.text-info{
+    text-shadow: 1px 2px rgb(119, 118, 118);
+}
 /* contact section */
 #contact{
     background-color: rgb(66, 64, 64);
@@ -97,7 +99,25 @@ hr {
 .text-right{
     text-decoration: underline;
 }
-
+.inp{
+    border: none;
+    border-radius: 4px;
+    height: 30px;
+}
+textarea{
+    border: none;
+    border-radius: 4px;
+}
+.submit{
+  border:2px solid rgb(255, 249, 249);
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  box-shadow: none;
+  background-color: rgb(17, 17, 17);
+}
+.margin{
+    margin-right: 14em;
+}
 /* media query */
 @media screen and (max-width: 575px) {
     body {
@@ -115,5 +135,13 @@ hr {
     .symbol {
         padding-top: 1rem;
     }
+    .text-right{
+        text-align: left !important;
+    }
 
+}
+@media screen and (max-width: 1190px) {
+ .shot{
+     width: inherit;
+ }
 }
