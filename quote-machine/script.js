@@ -9,17 +9,17 @@ function getQuote() {
       format: "jsonp"
     },
     success: function(quote) {
-      $('#quote-title').html('"' + quote.quoteText + '"')
-      $('#quote-content').html("-"+quote.quoteAuthor);
+      $('#text').html('"' + quote.quoteText + '"')
+      $('#author').html("-"+quote.quoteAuthor);
       if(quote.quoteAuthor==''){
-        $('#quote-content').html("-"+'Anonymous');
+        $('#author').html("-"+'Anonymous');
       }
     }
   });
 }
 getQuote();
 
-$('#btn').click(function(){
+$('#new-quote').click(function(){
 getQuote()
 });
 
